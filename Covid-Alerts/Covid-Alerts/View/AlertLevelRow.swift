@@ -11,7 +11,7 @@ enum TrafficLight {
     case green, yellow, red
 }
 
-class AlertLevel: UIView {
+class AlertLevelRow: UIView {
 
     var trafficLight: TrafficLight
     
