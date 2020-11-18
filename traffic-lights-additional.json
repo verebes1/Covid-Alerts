@@ -1,0 +1,126 @@
+[
+    {
+        "color": {
+            "name": {
+            "english": "Dark Red",
+            "german": "Dunkel Rot"
+            },
+            "hexCode": "#881717"
+        },
+        "description" : {
+            "english": "Cases between 50 - 100 per 100k",
+            "german": "50 - 100 pro 100k menschen"
+        },
+        "rules": {
+            "german": [
+                {
+                    "rule": "Erste Test 1 Rot"
+                },
+                {
+                    "rule": "Zweite Test 2 Rot"
+                }
+            ],
+            "english": [
+                {
+                    "rule": "Test 1 Red"
+                },
+                {
+                    "rule": "Test 2 Red"
+                }
+            ]
+        }
+    },
+	{
+		"color": {
+			"name": {
+			"english": "Red",
+			"german": "Rot"
+			},
+			"hexCode": "#ee6f57"
+		},
+        "description" : {
+            "english": "Cases between 50 - 100 per 100k",
+            "german": "50 - 100 pro 100k menschen"
+        },
+		"rules": {
+			"german": [
+				{
+					"rule": "Erste Test 1 Rot"
+				},
+				{
+					"rule": "Zweite Test 2 Rot"
+				}
+			],
+			"english": [
+				{
+					"rule": "Test 1 Red"
+				},
+				{
+					"rule": "Test 2 Red"
+				}
+			]
+		}
+	},
+	{
+		"color": {
+			"name": {
+			"english": "Yellow",
+			"german": "Gelb"
+			},
+			"hexCode": "#E6D056"
+		},
+        "description" : {
+            "english": "Cases between 50 - 100 per 100k",
+            "german": "50 - 100 pro 100k menschen"
+        },
+		"rules": {
+			"german": [
+				{
+					"rule": "Erste Test 1 Gelb"
+				},
+				{
+					"rule": "Zweite Test 2 Gelb"
+				}
+			],
+			"english": [
+				{
+					"rule": "Test 1 Yellow"
+				},
+				{
+					"rule": "Test 2 Yellow"
+				}
+			]
+		}
+	},
+	{
+		"color": {
+			"name": {
+			"english": "Green",
+			"german": "Grün"
+			},
+			"hexCode": "#3EFF63"
+		},
+        "description" : {
+            "english": "Cases between 50 - 100 per 100k",
+            "german": "50 - 100 pro 100k menschen"
+        },
+		"rules": {
+			"german": [
+				{
+					"rule": "Erste Test 1 Grün"
+				},
+				{
+					"rule": "Zweite Test 2, Grün"
+				}
+			],
+			"english": [
+				{
+					"rule": "Test 1 Green"
+				},
+				{
+					"rule": "Test 2 Green"
+				}
+			]
+		}
+	}
+]

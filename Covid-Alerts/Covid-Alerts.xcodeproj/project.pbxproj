@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F07F4D62562EFD100476786 /* AlertLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07F4D52562EFD100476786 /* AlertLevel.swift */; };
+		4F07F4D62562EFD100476786 /* AlertLevelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07F4D52562EFD100476786 /* AlertLevelRow.swift */; };
+		4F07F4E12563F99F00476786 /* TrafficLightCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07F4E02563F99F00476786 /* TrafficLightCircle.swift */; };
+		4F07F4E72563FA4600476786 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07F4E62563FA4600476786 /* UIColor+Extension.swift */; };
+		4F07F4F62564046600476786 /* AllAlertsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07F4F52564046600476786 /* AllAlertsStackView.swift */; };
+		4F07F4FB2564055000476786 /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07F4FA2564055000476786 /* ThemeColors.swift */; };
+		4F2A66302564208700109D32 /* MultiUseUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A662F2564208700109D32 /* MultiUseUILabel.swift */; };
+		4F2A663B2564455300109D32 /* TrafficLightsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A663A2564455300109D32 /* TrafficLightsModel.swift */; };
+		4F2A66452565527300109D32 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A66442565527300109D32 /* Language.swift */; };
+		4F2A664D2565639C00109D32 /* SmallInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A664C2565639C00109D32 /* SmallInfoView.swift */; };
+		4F2A665A2565648100109D32 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A66592565648100109D32 /* RoundedButton.swift */; };
+		4F778C8A256589430045623A /* traffic-lights.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F778C89256589430045623A /* traffic-lights.json */; };
 		4FC2307B2561C9530014BF6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC2307A2561C9530014BF6A /* AppDelegate.swift */; };
 		4FC2307D2561C9530014BF6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC2307C2561C9530014BF6A /* SceneDelegate.swift */; };
-		4FC2307F2561C9530014BF6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC2307E2561C9530014BF6A /* ViewController.swift */; };
+		4FC2307F2561C9530014BF6A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC2307E2561C9530014BF6A /* MainViewController.swift */; };
 		4FC230812561C9570014BF6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FC230802561C9570014BF6A /* Assets.xcassets */; };
 		4FC230842561C9570014BF6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC230822561C9570014BF6A /* LaunchScreen.storyboard */; };
 		4FC2308F2561C9570014BF6A /* Covid_AlertsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC2308E2561C9570014BF6A /* Covid_AlertsTests.swift */; };
@@ -35,11 +45,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4F07F4D52562EFD100476786 /* AlertLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertLevel.swift; sourceTree = "<group>"; };
+		4F07F4D52562EFD100476786 /* AlertLevelRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertLevelRow.swift; sourceTree = "<group>"; };
+		4F07F4E02563F99F00476786 /* TrafficLightCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightCircle.swift; sourceTree = "<group>"; };
+		4F07F4E62563FA4600476786 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		4F07F4F52564046600476786 /* AllAlertsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAlertsStackView.swift; sourceTree = "<group>"; };
+		4F07F4FA2564055000476786 /* ThemeColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColors.swift; sourceTree = "<group>"; };
+		4F2A662F2564208700109D32 /* MultiUseUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiUseUILabel.swift; sourceTree = "<group>"; };
+		4F2A663A2564455300109D32 /* TrafficLightsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightsModel.swift; sourceTree = "<group>"; };
+		4F2A66442565527300109D32 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		4F2A664C2565639C00109D32 /* SmallInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallInfoView.swift; sourceTree = "<group>"; };
+		4F2A66592565648100109D32 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		4F778C89256589430045623A /* traffic-lights.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "traffic-lights.json"; sourceTree = "<group>"; };
+		4F778C8E256589910045623A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		4FC230772561C9530014BF6A /* Covid-Alerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-Alerts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC2307A2561C9530014BF6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FC2307C2561C9530014BF6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4FC2307E2561C9530014BF6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FC2307E2561C9530014BF6A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4FC230802561C9570014BF6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FC230832561C9570014BF6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FC230852561C9570014BF6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,7 +100,13 @@
 		4F07F4D12562EEB600476786 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4F07F4D52562EFD100476786 /* AlertLevel.swift */,
+				4F07F4F52564046600476786 /* AllAlertsStackView.swift */,
+				4F07F4D52562EFD100476786 /* AlertLevelRow.swift */,
+				4F07F4E02563F99F00476786 /* TrafficLightCircle.swift */,
+				4F2A662F2564208700109D32 /* MultiUseUILabel.swift */,
+				4F07F4FA2564055000476786 /* ThemeColors.swift */,
+				4F2A664C2565639C00109D32 /* SmallInfoView.swift */,
+				4F2A66592565648100109D32 /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,6 +114,9 @@
 		4F07F4D22562EEBD00476786 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4F2A663A2564455300109D32 /* TrafficLightsModel.swift */,
+				4F778C89256589430045623A /* traffic-lights.json */,
+				4F2A66442565527300109D32 /* Language.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -94,6 +124,7 @@
 		4F07F4D32562EEC800476786 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4FC2307E2561C9530014BF6A /* MainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -103,6 +134,24 @@
 			children = (
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		4F07F4E52563FA2800476786 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4F07F4E62563FA4600476786 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4F07F4F1256400BE00476786 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4FC2307A2561C9530014BF6A /* AppDelegate.swift */,
+				4FC2307C2561C9530014BF6A /* SceneDelegate.swift */,
+				4FC230802561C9570014BF6A /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		4FC2306E2561C9530014BF6A = {
@@ -128,14 +177,12 @@
 		4FC230792561C9530014BF6A /* Covid-Alerts */ = {
 			isa = PBXGroup;
 			children = (
+				4F07F4E52563FA2800476786 /* Extensions */,
 				4F07F4D42562EEE800476786 /* Networking */,
 				4F07F4D22562EEBD00476786 /* Model */,
 				4F07F4D12562EEB600476786 /* View */,
 				4F07F4D32562EEC800476786 /* Controller */,
-				4FC2307A2561C9530014BF6A /* AppDelegate.swift */,
-				4FC2307C2561C9530014BF6A /* SceneDelegate.swift */,
-				4FC2307E2561C9530014BF6A /* ViewController.swift */,
-				4FC230802561C9570014BF6A /* Assets.xcassets */,
+				4F07F4F1256400BE00476786 /* SupportingFiles */,
 				4FC230822561C9570014BF6A /* LaunchScreen.storyboard */,
 				4FC230852561C9570014BF6A /* Info.plist */,
 			);
@@ -245,6 +292,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 4FC2306E2561C9530014BF6A;
 			productRefGroup = 4FC230782561C9530014BF6A /* Products */;
@@ -263,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F778C8A256589430045623A /* traffic-lights.json in Resources */,
 				4FC230812561C9570014BF6A /* Assets.xcassets in Resources */,
 				4FC230842561C9570014BF6A /* LaunchScreen.storyboard in Resources */,
 			);
@@ -289,10 +338,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FC2307F2561C9530014BF6A /* ViewController.swift in Sources */,
+				4FC2307F2561C9530014BF6A /* MainViewController.swift in Sources */,
 				4FC2307B2561C9530014BF6A /* AppDelegate.swift in Sources */,
+				4F07F4E12563F99F00476786 /* TrafficLightCircle.swift in Sources */,
+				4F07F4F62564046600476786 /* AllAlertsStackView.swift in Sources */,
+				4F2A66452565527300109D32 /* Language.swift in Sources */,
+				4F07F4E72563FA4600476786 /* UIColor+Extension.swift in Sources */,
+				4F2A664D2565639C00109D32 /* SmallInfoView.swift in Sources */,
 				4FC2307D2561C9530014BF6A /* SceneDelegate.swift in Sources */,
-				4F07F4D62562EFD100476786 /* AlertLevel.swift in Sources */,
+				4F2A663B2564455300109D32 /* TrafficLightsModel.swift in Sources */,
+				4F07F4D62562EFD100476786 /* AlertLevelRow.swift in Sources */,
+				4F07F4FB2564055000476786 /* ThemeColors.swift in Sources */,
+				4F2A66302564208700109D32 /* MultiUseUILabel.swift in Sources */,
+				4F2A665A2565648100109D32 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +390,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4FC230832561C9570014BF6A /* Base */,
+				4F778C8E256589910045623A /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -343,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -404,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
