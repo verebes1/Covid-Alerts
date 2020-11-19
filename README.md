@@ -3,7 +3,9 @@
 ## Introduction
 
 The app is built using UIKit. Using pure programmatic approach.
-Time taken 3 days.
+Time taken 3 days. Unfortunately due to other constraints could not spend more time on the project.
+However the code will show you my coding style and how I structure my apps. I like clean and maintanable code. 
+I will be thrilled to discuss how I would approach the other aspects of the project during call. 
 
 ## Structure:
 
