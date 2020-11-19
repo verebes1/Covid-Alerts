@@ -60,6 +60,7 @@ final class AllAlertsStackView: UIStackView {
         
         // TODO:- Remove the code below and implement an active state selection where the information is loaded based on the information received over the network. The code below is just to test the UI.
         guard let selected = arrangedSubviews[arrangedSubviews.count - 1] as? AlertLevelRow else { return }
+        activeAlert = arrangedSubviews.count - 1
         selected.isActive = true
     }
 }

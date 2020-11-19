@@ -23,6 +23,7 @@ All the components of the app are categorised into separate groups for readabili
 - The implementation of the additional Alert element "Dark-Red" just replace the contents of traffic-lights.json with the contents of the traffic-lights-additional.json and re-run the code.
 
 ## What needs doing:
+- Robust extensible language changing mechanism
 - Networking layer
 - The second ViewController which needs to display the details of each covid level
     - Add the elements of the second ViewController. Either as a UIScrollView with a custom UIView as a bullet pointed row as per the design document. Or as a UITableView and UITableVIewCell as a bullet pointed row.

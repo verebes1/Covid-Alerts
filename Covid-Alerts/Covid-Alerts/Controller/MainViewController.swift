@@ -8,7 +8,7 @@
 import UIKit
 
 final class MainViewController: UIViewController {
-
+    // Lang hardcoded for testing purposes production should use the language switch mechanism
     let allAlertsStackView = AllAlertsStackView(language: .german)
     let smallInfoView = SmallInfoView(title: "", details: "")
     
@@ -39,6 +39,8 @@ final class MainViewController: UIViewController {
 
         let activeAlert = allAlertsStackView.activeAlert
         let infoViewModel = allAlertsStackView.trafficLightsModel?[activeAlert]
+        
+        // Language hardcoded for testing
         smallInfoView.titleLabel.text = infoViewModel?.color.name.english
         smallInfoView.detailsLabel.text = infoViewModel?.trafficLightDescription.english
         

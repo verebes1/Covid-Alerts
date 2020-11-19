@@ -10,3 +10,5 @@ import Foundation
 enum Language: String {
     case german, english
 }
+
+// TODO:- Implement a language checking mechanism and setting the language accordingly.
