@@ -20,7 +20,7 @@ All the components of the app are categorised into separate groups for readabili
 
 - The UI layout and the creation of the reusable UI elements
 - The traffic-light.json for easy app extensibility.
-- The implementation of the additional Alert element "Dark-Red" just replace the contents of traffic-lights.json with the contents of the traffic-lights-additional.json and re-run the code.
+- The implementation of the additional Alert element "Dark-Red" is done by replacing the contents of traffic-lights.json with the contents of the traffic-lights-additional.json and re-runing the code. Not a single line of code needs changing.
 
 ## What needs doing:
 - Robust extensible language changing mechanism
