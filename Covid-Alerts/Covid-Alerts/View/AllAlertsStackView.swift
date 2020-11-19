@@ -14,11 +14,7 @@ final class AllAlertsStackView: UIStackView {
 
     init(language: Language = .english) {
         super.init(frame: .zero)
-        translatesAutoresizingMaskIntoConstraints = false
-        alignment = .fill
-        axis = .vertical
-        distribution = .fillEqually
-        spacing = 20
+        setupStackView()
         
         trafficLightsModel = loadTrafficLightsModel()
         loadAlertLevels(language: language)
@@ -26,6 +22,14 @@ final class AllAlertsStackView: UIStackView {
     
     required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setupStackView() {
+        translatesAutoresizingMaskIntoConstraints = false
+        alignment = .fill
+        axis = .vertical
+        distribution = .fillEqually
+        spacing = 20
     }
     
     private func loadTrafficLightsModel() -> TrafficLights? {
@@ -41,6 +45,8 @@ final class AllAlertsStackView: UIStackView {
         
         for light in trafficLights {
             let colorName: String
+
+            // TODO:- Eliminate this switch statement to get easier extensibility
             switch language {
             case .german:
                 colorName = light.color.name.german
@@ -51,6 +57,8 @@ final class AllAlertsStackView: UIStackView {
             let alertLevelRow = AlertLevelRow(trafficLightHexColour: light.color.hexCode, colorName: colorName)
             addArrangedSubview(alertLevelRow)
         }
+        
+        // TODO:- Remove the code below and implement an active state selection where the information is loaded based on the information received over the network. The code below is just to test the UI.
         guard let selected = arrangedSubviews[arrangedSubviews.count - 1] as? AlertLevelRow else { return }
         selected.isActive = true
     }

@@ -11,18 +11,22 @@ final class TrafficLightCircle: UIView {
     
     init(hexColor: String) {
         super.init(frame: .zero)
-        backgroundColor = UIColor(hex: hexColor)
-        setRoundedCorners()
-        translatesAutoresizingMaskIntoConstraints = false
+        setupTraffiLightView(hexColor: hexColor)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setRoundedCorners(/*radius: CGFloat*/) {
+    private func setupTraffiLightView(hexColor: String) {
+        backgroundColor = UIColor(hex: hexColor)
+        translatesAutoresizingMaskIntoConstraints = false
+        setRoundedCorners()
+    }
+    
+    private func setRoundedCorners() {
+        // Automatically sets the corners to a circle once the views are layed out and have a height.
         Timer.scheduledTimer(withTimeInterval: 0.01, repeats: false) { (nil) in
-//            print("LIGHT SIZE IS:\(self.frame.height)")
             self.layer.cornerRadius = self.frame.height / 2
         }
     }

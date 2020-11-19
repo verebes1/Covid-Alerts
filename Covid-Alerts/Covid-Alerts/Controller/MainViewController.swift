@@ -16,11 +16,11 @@ final class MainViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = ThemeColors.mainBackground
-        setUpAllAlertStackView()
-        setUpSmallInfoView()
+        setupAllAlertStackView()
+        setupSmallInfoView()
     }
 
-    func setUpAllAlertStackView() {
+    func setupAllAlertStackView() {
         let safeArea = view.safeAreaLayoutGuide
         let screenHeight: CGFloat = UIScreen.main.bounds.height
         
@@ -32,7 +32,7 @@ final class MainViewController: UIViewController {
         allAlertsStackView.rightAnchor.constraint(equalTo: safeArea.rightAnchor, constant: -30).isActive = true
     }
     
-    func setUpSmallInfoView() {
+    func setupSmallInfoView() {
         guard allAlertsStackView.trafficLightsModel != nil else { return }
         
         let safeArea = view.safeAreaLayoutGuide

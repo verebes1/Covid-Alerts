@@ -16,10 +16,19 @@ enum FontStyle {
     case italic
 }
 
-class MultiUseUILabel: UILabel {
-
-    init(text setText: String = "", fontSize: CGFloat = 20, fontStyle: FontStyle = .normal, textColor: UIColor = ThemeColors.labelTextColor, textAlignment: NSTextAlignment = .left, isMultiline: Bool = true) {
+final class MultiUseUILabel: UILabel {
+    
+    init(text: String = "", fontSize: CGFloat = 20, fontStyle: FontStyle = .normal, textColor: UIColor = ThemeColors.labelTextColor, textAlignment: NSTextAlignment = .left, isMultiline: Bool = true) {
+        
         super.init(frame: .zero)
+        setupLabel(text: text, fontSize: fontSize, fontStyle: fontStyle, textColor: textColor, textAlignment: textAlignment, isMultiline: isMultiline)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setupLabel(text setText: String, fontSize: CGFloat, fontStyle: FontStyle, textColor: UIColor, textAlignment: NSTextAlignment, isMultiline: Bool) {
         
         switch fontStyle {
         case .bold:
@@ -37,12 +46,5 @@ class MultiUseUILabel: UILabel {
         numberOfLines = isMultiline ? 0 : 1
         self.textAlignment = textAlignment
         translatesAutoresizingMaskIntoConstraints = false
-        
-        
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
 }

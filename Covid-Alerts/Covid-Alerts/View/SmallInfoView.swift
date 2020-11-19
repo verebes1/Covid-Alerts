@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SmallInfoView: UIView {
+final class SmallInfoView: UIView {
 
     var titleLabel: MultiUseUILabel
     var detailsLabel: MultiUseUILabel
@@ -18,11 +18,7 @@ class SmallInfoView: UIView {
         detailsLabel = MultiUseUILabel(text: details, fontSize: 20, fontStyle: .normal, textAlignment: .center)
         
         super.init(frame: .zero)
-        backgroundColor = ThemeColors.alertRowBackground
-        layer.borderColor = ThemeColors.alertRowBorder
-        layer.borderWidth = 2
-        layer.cornerRadius = 20
-        translatesAutoresizingMaskIntoConstraints = false
+        setupInfoView()
         
         setupInfoViewElements()
     }
@@ -31,7 +27,15 @@ class SmallInfoView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupInfoViewElements() {
+    private func setupInfoView() {
+        backgroundColor = ThemeColors.alertRowBackground
+        layer.borderColor = ThemeColors.alertRowBorder
+        layer.borderWidth = 2
+        layer.cornerRadius = 20
+        translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    private func setupInfoViewElements() {
         addSubview(titleLabel)
         addSubview(detailsLabel)
         addSubview(showDetailsBtn)

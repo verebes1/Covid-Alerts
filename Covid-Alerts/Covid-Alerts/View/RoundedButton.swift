@@ -7,19 +7,18 @@
 
 import UIKit
 
-class RoundedButton: UIButton {
+final class RoundedButton: UIButton {
 
     init(title: String = "No title", fontSize: CGFloat = 25) {
         super.init(frame: .zero)
-        setTitle(title, for: .normal)
-        setupButton(fontSize: fontSize)
+        setupButton(title: title, fontSize: fontSize)
    }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override var isHighlighted: Bool{
+    override var isHighlighted: Bool {
         didSet {
             if isHighlighted {
                 backgroundColor = .white
@@ -36,7 +35,8 @@ class RoundedButton: UIButton {
         }
     }
     
-    private func setupButton(fontSize: CGFloat = 25) {
+    private func setupButton(title: String, fontSize: CGFloat = 25) {
+        setTitle(title, for: .normal)
         titleLabel?.textColor = .white
         titleLabel?.font = UIFontMetrics(forTextStyle: UIFont.TextStyle.body).scaledFont(for: UIFont(name: "Helvetica-Bold", size: fontSize)!)
         backgroundColor = ThemeColors.buttonColor

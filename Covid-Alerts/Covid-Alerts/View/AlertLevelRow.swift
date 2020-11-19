@@ -21,18 +21,21 @@ final class AlertLevelRow: UIView {
     
     init(trafficLightHexColour: String, colorName: String) {
         super.init(frame: .zero)
-        backgroundColor = ThemeColors.alertRowBackground
-        layer.borderColor = ThemeColors.alertRowBorder
-        layer.borderWidth = 2
-        layer.cornerRadius = 20
-        setupRowElements(trafficLightHexColour: trafficLightHexColour, colorName: colorName)
+        setupRowView()
         
+        setupRowElements(trafficLightHexColour: trafficLightHexColour, colorName: colorName)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private func setupRowView() {
+        backgroundColor = ThemeColors.alertRowBackground
+        layer.borderColor = ThemeColors.alertRowBorder
+        layer.borderWidth = 2
+        layer.cornerRadius = 20
+    }
     
     private func setupRowElements(trafficLightHexColour: String, colorName: String) {
         let trafficLightCircle = TrafficLightCircle(hexColor: trafficLightHexColour)
